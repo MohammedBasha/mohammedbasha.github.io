@@ -1,0 +1,449 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #888;
+  line-height: 1.8em;
+}
+body section {
+  padding: 0 15px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: #3e3e3e;
+}
+
+/* Mixins */
+#contact button, .portfolio-section > p > a, body section > a {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
+  background-color: #43B3E0;
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+#contact, #portfolio, #services, #intro {
+  box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 281px) {
+  article section h2 {
+    font-size: 2em;
+  }
+  article section h3 {
+    font-size: 22px;
+  }
+  article section p {
+    font-size: 20px !important;
+  }
+}
+@media (min-width: 768px) {
+  #contact button, .portfolio-section > p > a, body section > a {
+    font-size: 27px;
+  }
+
+  article section h2 {
+    font-size: 4em;
+  }
+  article section h3 {
+    font-size: 40px;
+  }
+  article section p {
+    font-size: 30px !important;
+    line-height: 1.5;
+  }
+}
+@media (min-width: 1024px) {
+  #intro {
+    text-align: center;
+  }
+
+  article section h3 {
+    font-size: 25px;
+    height: 60px;
+    overflow: hidden;
+  }
+  article section p {
+    font-size: 23px !important;
+  }
+  article section div p {
+    font-size: 18px !important;
+    height: 110px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 1024px) {
+  #contact button, .portfolio-section > p > a, body section > a {
+    display: inline-block;
+    width: auto;
+    padding: 15px;
+    font-size: 22px;
+  }
+}
+@media (min-width: 1280px) {
+  article section h3 {
+    height: 29px;
+  }
+}
+#nav {
+  background-color: #282828;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+#nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px;
+}
+#nav a {
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+@media (min-width: 768px) {
+  #nav ul {
+    justify-content: space-around;
+  }
+  #nav a {
+    font-size: 25px;
+    padding: 0 10px;
+  }
+}
+#intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#intro h1 {
+  font-weight: normal;
+  line-height: 1.5em;
+  font-size: 1.5em;
+}
+#intro h1 strong {
+  display: block;
+  font-size: 1.1em;
+}
+#intro p {
+  font-size: 17px;
+  text-align: center;
+}
+
+#services {
+  background-color: #fafafa;
+  text-shadow: 1px 1px 0px #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.services > p {
+  margin-bottom: 50px;
+}
+
+.service-item {
+  margin-bottom: 30px;
+  background: #fff;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.service-item img {
+  width: 100%;
+}
+.service-item p {
+  padding: 0 15px 15px;
+}
+
+#portfolio {
+  background-color: #f4f4f4;
+  text-shadow: 1px 1px 0px #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.portfolio-section > p {
+  margin-bottom: 50px;
+}
+.portfolio-section > p > a {
+  margin-bottom: 10px;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+  background: #fff;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.portfolio-item p {
+  padding: 0 15px 15px;
+}
+.portfolio-item img {
+  width: 100%;
+}
+
+@media (min-width: 281px) {
+  #intro h1 {
+    text-align: center;
+  }
+  #intro h1 strong {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 767px) {
+  #intro h1 {
+    font-size: 2.5em;
+  }
+  #intro p {
+    font-size: 25px !important;
+    line-height: 1.7;
+  }
+
+  .service-item p {
+    padding: 0 25px 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .serices-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .service-item {
+    flex-basis: 23%;
+  }
+
+  .service-img {
+    height: 157px;
+    overflow: hidden;
+  }
+
+  .portfolio-section > p {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 23px !important;
+  }
+  .portfolio-section > p > a:first-child {
+    margin-right: 20px;
+  }
+
+  .portfolio-section-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .portfolio-item {
+    flex-basis: 30%;
+  }
+  .portfolio-item > a {
+    height: 125px;
+    overflow: hidden;
+    display: block;
+  }
+  .portfolio-item h3 {
+    height: 29px !important;
+  }
+}
+#contact {
+  text-align: center;
+  background-color: #303030;
+  color: #999;
+  text-shadow: -1px -1px 0px #181818;
+  padding: 40px 0;
+}
+#contact h2 {
+  color: #fff;
+}
+#contact .error-icon,
+#contact .error-text {
+  display: none;
+}
+#contact .field-group {
+  position: relative;
+}
+#contact .error-text {
+  text-align: right;
+  bottom: 0;
+  right: 0;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #ff7a7a;
+  font-weight: 500;
+  margin: -10px 0 20px;
+}
+#contact .error-icon {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  top: 15px;
+}
+#contact .field-group.error .error-text,
+#contact .field-group.error .error-icon {
+  display: block;
+}
+#contact .field-group.error input,
+#contact .field-group.error textarea {
+  border: 2px solid #ff7a7a;
+}
+#contact input, #contact textarea {
+  border: none;
+  background: #282828;
+  border-radius: 8px;
+  color: #bbb;
+  box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.03);
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+#contact input::placeholder, #contact textarea::placeholder {
+  color: #bbb;
+}
+#contact textarea {
+  resize: none;
+  height: 250px;
+}
+#contact button {
+  text-align: center;
+  font-size: 1.2em;
+  width: 100%;
+  padding: 1em 0;
+}
+#contact footer {
+  border-top: solid 1px #444;
+  border-top-color: rgba(0, 0, 0, 0.35);
+  border-bottom: solid 1px #444;
+  border-bottom-color: rgba(0, 0, 0, 0.35);
+  margin: 50px 0 20px;
+  padding: 25px 0;
+}
+#contact footer h3 {
+  margin-top: 0;
+  color: #fff;
+  margin-bottom: 30px;
+}
+#contact footer .contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#contact footer .contacts a {
+  flex-basis: 23%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+#contact footer .contacts a i {
+  font-size: 45px;
+}
+
+.contact > p:nth-of-type(2) {
+  margin-bottom: 0;
+}
+.contact > p > a {
+  text-decoration: underline;
+}
+
+.g-recaptcha {
+  margin-bottom: 20px;
+}
+.g-recaptcha > div {
+  width: 100% !important;
+}
+.g-recaptcha > div iframe {
+  width: 100% !important;
+}
+
+.g-recaptcha-response {
+  display: block !important;
+  position: absolute;
+  margin: -50px 0 0 0 !important;
+  z-index: -999999;
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  #contact footer .contacts {
+    padding: 0 25%;
+  }
+  #contact footer .contacts a i {
+    font-size: 50px;
+  }
+
+  .g-recaptcha > div {
+    width: 304px !important;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) {
+  #contact form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #contact form .field-group {
+    flex-basis: 48%;
+  }
+  #contact form .field-group:nth-child(3) {
+    flex-basis: 100%;
+  }
+  #contact form .g-recaptcha {
+    flex-basis: 100%;
+  }
+  #contact button {
+    display: inline-block;
+    width: auto;
+    padding: 15px;
+    margin: auto;
+  }
+  #contact footer .contacts {
+    padding: 0 30%;
+  }
+  #contact footer .contacts a i {
+    font-size: 45px;
+  }
+  #contact footer + p {
+    font-size: 18px !important;
+  }
+}
+@media (min-width: 1280px) {
+  #contact .contact {
+    max-width: 1000px;
+    margin: auto;
+  }
+  #contact footer .contacts {
+    padding: 0 35%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,129 @@
+#intro
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    @extend %box-shadow !optional
+
+    h1
+        font-weight: normal
+        line-height: 1.5em
+        font-size: 1.5em
+
+        strong
+            display: block
+            font-size: 1.1em
+
+    p
+        font-size: 17px
+        text-align: center
+
+#services
+    background-color: #fafafa
+    text-shadow: 1px 1px 0px #fff
+    @extend %box-shadow !optional
+    padding: 40px 0
+    text-align: center
+
+.services
+    > p
+        margin-bottom: 50px
+
+.service-item
+    margin-bottom: 30px
+    background: #fff
+    box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 15%), 0px 2px 3px 0px rgb(0 0 0 / 10%)
+    text-align: center
+
+    img
+        width: 100%
+
+    p
+        padding: 0 15px 15px
+
+#portfolio
+    background-color: #f4f4f4
+    text-shadow: 1px 1px 0px #fff
+    @extend %box-shadow !optional
+    padding: 40px 0
+    text-align: center
+
+.portfolio-section
+    > p
+        margin-bottom: 50px
+
+        > a
+            @extend %move-to-next !optional
+            margin-bottom: 10px
+
+.portfolio-item
+    margin-bottom: 30px
+    background: #fff
+    box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 15%), 0px 2px 3px 0px rgb(0 0 0 / 10%)
+    text-align: center
+
+    p
+        padding: 0 15px 15px
+
+    img
+        width: 100%
+
+@media (min-width: 281px)
+    #intro
+        h1
+            text-align: center
+
+            strong
+                font-size: 1.5em
+
+@media (min-width: 767px)
+    #intro
+        h1
+            font-size: 2.5em
+
+        p
+            font-size: 25px !important
+            line-height: 1.7
+        
+    .service-item
+        p
+            padding: 0 25px 25px
+
+@media (min-width: 1024px)
+    .serices-items
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    
+    .service-item
+        flex-basis: 32%
+
+    .service-img
+        height: 157px
+        overflow: hidden
+
+    .portfolio-section
+        > p
+            margin-left: 10%
+            margin-right: 10%
+            font-size: 23px !important
+
+            > a
+                &:first-child
+                    margin-right: 20px
+
+    .portfolio-section-items
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    
+    .portfolio-item
+        flex-basis: 32%
+
+        > a
+            height: 125px
+            overflow: hidden
+            display: block
+
+        h3
+            height: 29px !important
