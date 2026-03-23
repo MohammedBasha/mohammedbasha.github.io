@@ -94,7 +94,9 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'G-236B5R1S32');
+    gtag('config', 'G-236B5R1S32', {
+      debug_mode: window.location.hostname === "localhost"
+    });
   </script>
 </head>
 

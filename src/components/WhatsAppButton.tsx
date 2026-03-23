@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 import { CONTACT } from "@/data/contact";
 import { useState, useEffect } from "react";
+import { trackEvent } from "./Analytics";
 
 export default function WhatsAppButton() {
     const [pulseCount, setPulseCount] = useState(0);
@@ -23,6 +24,7 @@ export default function WhatsAppButton() {
         <AnimatePresence>
             <motion.a
                 href={CONTACT.whatsapp}
+                onClick={() => trackEvent("contact_click", "WhatsApp Button")}
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ scale: 0 }}

@@ -13,6 +13,7 @@ import { useI18n } from "@/lib/i18n";
 import { CONTACT } from "@/data/contact";
 import emailjs from "@emailjs/browser";
 import { z } from "zod";
+import { trackEvent } from "./Analytics";
 
 const contactSchema = z.object({
     name: z
@@ -281,6 +282,12 @@ export default function Contact() {
                         <button
                             type="submit"
                             disabled={status === "sending"}
+                            onClick={() =>
+                                trackEvent(
+                                    "contact_click",
+                                    "Start a Conversation Button",
+                                )
+                            }
                             className="group inline-flex items-center gap-3 px-7 py-3.5 bg-primary text-primary-foreground font-medium text-sm rounded-full hover:scale-105 transition-transform duration-300 mt-4 disabled:opacity-50 disabled:hover:scale-100"
                         >
                             <Send
