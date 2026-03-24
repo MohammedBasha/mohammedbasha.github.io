@@ -1,0 +1,1 @@
+var t={email:"mohammedbasha9191@gmail.com",phone:"+201115793403",whatsapp:"https://wa.me/201115793403",linkedin:"https://linkedin.com/in/mohammed-basha",github:"https://github.com/mohammedbasha"},m=(a,e)=>{window.gtag&&window.gtag("event",a,{event_category:"engagement",event_label:e})};export{t as n,m as t};
