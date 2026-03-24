@@ -34,7 +34,35 @@ export default memo(function Testimonials() {
         return () => clearInterval(interval);
     }, [filteredTestimonials.length, isHovered, visibleCards]);
 
-    // Get the visible testimonials to display
+    const maxIndex = Math.max(0, filteredTestimonials.length - visibleCards);
+
+    const goToNext = () =>
+        setCurrentIndex((prevIndex) =>
+            prevIndex >= maxIndex ? 0 : prevIndex + 1,
+        );
+
+    const goToPrev = () =>
+        setCurrentIndex((prevIndex) =>
+            prevIndex <= 0 ? maxIndex : prevIndex - 1,
+        );
+
+    const handleDragEnd = (
+        _: unknown,
+        info: { offset: { x: number }; velocity: { x: number } },
+    ) => {
+        const moveX = info.offset.x;
+
+        if (Math.abs(moveX) > 50) {
+            if (moveX < 0) {
+                goToNext();
+            } else {
+                goToPrev();
+            }
+        }
+
+        setIsHovered(false);
+    };
+
     const visibleTestimonials = filteredTestimonials.slice(
         currentIndex,
         currentIndex + visibleCards,
@@ -152,6 +180,11 @@ export default memo(function Testimonials() {
                                     duration: 0.8,
                                     ease: [0.33, 1, 0.68, 1],
                                 }}
+                                drag="x"
+                                dragConstraints={{ left: 0, right: 0 }}
+                                dragElastic={0.1}
+                                onDragStart={() => setIsHovered(true)}
+                                onDragEnd={handleDragEnd}
                                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
                             >
                                 {visibleTestimonials.map((testimonial, index) =>
