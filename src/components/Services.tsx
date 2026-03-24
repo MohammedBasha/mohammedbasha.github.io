@@ -71,7 +71,7 @@ export default function Services() {
                                                     service.name.ar,
                                                 )}
                                             </h3>
-                                            <p className="text-sm text-muted-foreground mt-1 max-w-md hidden md:block">
+                                            <p className="text-sm text-muted-foreground mt-1 max-w-sm xl:max-w-md hidden md:block">
                                                 {t(
                                                     service.description.en,
                                                     service.description.ar,

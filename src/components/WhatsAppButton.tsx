@@ -48,7 +48,7 @@ export default function WhatsAppButton() {
             >
                 <MessageCircle
                     className="w-6 h-6 text-primary-foreground"
-                    strokeWidth={1.5}
+                    strokeWidth={2.3}
                 />
                 <span className="absolute -top-1 -end-1 w-3 h-3 rounded-full bg-emerald-400 animate-pulse" />
             </motion.a>

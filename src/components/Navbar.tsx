@@ -82,7 +82,9 @@ export default memo(function Navbar() {
                     (e) => e.intersectionRatio >= 0.3,
                 );
 
-                const best = (aboveThreshold.length ? aboveThreshold : visible)[0];
+                const best = (
+                    aboveThreshold.length ? aboveThreshold : visible
+                )[0];
                 const id = (best.target as HTMLElement).id;
                 if (id) setActiveSection(id);
             },
@@ -173,7 +175,7 @@ export default memo(function Navbar() {
                 </Link>
 
                 {/* Desktop nav */}
-                <div className="hidden md:flex items-center gap-8">
+                <div className="hidden md:flex items-center md:gap-4 xl:gap-8">
                     {navItems.map((item) =>
                         item.href === "#services" ? (
                             <div
@@ -254,7 +256,7 @@ export default memo(function Navbar() {
                     )}
                 </div>
 
-                <div className="hidden md:flex items-center gap-3">
+                <div className="hidden md:flex items-center md:gap-1 xl:gap-3">
                     <button
                         onClick={toggleTheme}
                         className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-primary/40 transition-all duration-300"

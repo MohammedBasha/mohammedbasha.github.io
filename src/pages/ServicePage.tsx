@@ -223,11 +223,10 @@ export default function ServicePage() {
             value: string,
             attr: "content" | "href" = "content",
         ) => {
-            const el =
-                document.querySelector(selector) as
-                    | HTMLMetaElement
-                    | HTMLLinkElement
-                    | null;
+            const el = document.querySelector(selector) as
+                | HTMLMetaElement
+                | HTMLLinkElement
+                | null;
             if (!el) return;
             if (attr === "content") {
                 (el as HTMLMetaElement).content = value;
@@ -429,7 +428,7 @@ export default function ServicePage() {
                                                 project.title.ar,
                                             )}
                                         </h3>
-                                        <p className="text-sm text-muted-foreground leading-relaxed mb-4 h-[11rem]">
+                                        <p className="text-sm text-muted-foreground leading-relaxed mb-4 h-[14rem]">
                                             {t(
                                                 project.description.en,
                                                 project.description.ar,
