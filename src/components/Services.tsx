@@ -54,17 +54,17 @@ export default function Services() {
                                     to={`/services/${service.slug}`}
                                     className="w-full flex items-center justify-between py-8 md:py-10 text-start transition-all duration-500 hover:ps-4"
                                 >
-                                    <div className="flex items-center gap-6 md:gap-8">
-                                        <span className="text-xs font-mono text-muted-foreground/40 w-8">
+                                    <div className="flex items-center gap-5 md:gap-8">
+                                        <span className="text-xs font-mono text-muted-foreground/40 w-6">
                                             {String(i + 1).padStart(2, "0")}
                                         </span>
-                                        <div className="w-12 h-12 rounded-full border border-border flex items-center justify-center group-hover:border-primary/40 group-hover:bg-primary/5 transition-all duration-500">
+                                        <div className="min-w-12 w-12 h-12 rounded-full border border-border flex items-center justify-center group-hover:border-primary/40 group-hover:bg-primary/5 transition-all duration-500">
                                             <Icon
                                                 className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-500"
                                                 strokeWidth={1.5}
                                             />
                                         </div>
-                                        <div>
+                                        <div className="min-w-[9rem] max-w-[9rem] md:min-w-full md:max-w-md">
                                             <h3 className="font-display text-xl md:text-2xl font-semibold text-foreground group-hover:text-primary transition-colors duration-500">
                                                 {t(
                                                     service.name.en,

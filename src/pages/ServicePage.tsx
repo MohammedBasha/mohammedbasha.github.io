@@ -422,13 +422,17 @@ export default function ServicePage() {
                                         )}
                                     </div>
                                     <div className="p-6">
-                                        <h3 className="text-lg font-semibold mb-2 text-foreground h-[3.8rem]">
+                                        <h3
+                                            className={`text-lg font-semibold mb-2 text-foreground ${lang === "ar" ? "h-[6rem] md:h-[4rem]" : "h-[6rem] md:h-[4rem]"}`}
+                                        >
                                             {t(
                                                 project.title.en,
                                                 project.title.ar,
                                             )}
                                         </h3>
-                                        <p className="text-sm text-muted-foreground leading-relaxed mb-4 h-[14rem]">
+                                        <p
+                                            className={`text-sm text-muted-foreground leading-relaxed mb-4 ${lang === "ar" ? "h-[14rem] md:h-[8rem] xl:h-[7rem]" : "h-[18rem] md:h-[13rem] xl:h-[12rem]"}`}
+                                        >
                                             {t(
                                                 project.description.en,
                                                 project.description.ar,

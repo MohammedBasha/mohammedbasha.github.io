@@ -159,7 +159,9 @@ export default function Portfolio({
                                     <h3 className="font-display text-lg md:text-xl font-semibold mb-3 text-foreground group-hover:text-primary transition-colors duration-300 h-[5.5rem] xl:h-14">
                                         {t(project.title.en, project.title.ar)}
                                     </h3>
-                                    <p className="text-sm text-muted-foreground leading-relaxed mb-5 h-[15rem] xl:h-[8rem]">
+                                    <p
+                                        className={`text-sm text-muted-foreground leading-relaxed mb-5 ${lang === "ar" ? "h-[12rem] md:h-[9rem] xl:h-[5rem]" : "h-[17rem] md:h-[13rem] xl:h-[8rem]"}`}
+                                    >
                                         {t(
                                             project.description.en,
                                             project.description.ar,

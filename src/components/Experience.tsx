@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { TIMELINE } from "@/data/timeline";
 
 export default function Experience() {
-    const { t, dir } = useI18n();
+    const { t, dir, lang } = useI18n();
     const navigate = useNavigate();
 
     const handleTagClick = (tag: string) => {
@@ -74,7 +74,9 @@ export default function Experience() {
                                 >
                                     {t(entry.title.en, entry.title.ar)}
                                 </h3>
-                                <p className="text-sm text-muted-foreground leading-relaxed mb-4 h-12">
+                                <p
+                                    className={`text-sm text-muted-foreground leading-relaxed mb-4 md:h-[3.2rem] ${lang === "ar" ? "h-[6rem]" : "h-[8rem]"}`}
+                                >
                                     {t(
                                         entry.description.en,
                                         entry.description.ar,

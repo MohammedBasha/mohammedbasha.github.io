@@ -164,7 +164,7 @@ export default function Contact() {
                     </p>
                 </motion.div>
 
-                <div className="grid lg:grid-cols-2 gap-16 max-w-5xl mx-auto">
+                <div className="grid lg:grid-cols-2 gap-16 max-w-5xl mx-auto overflow-hidden">
                     {/* Form */}
                     <motion.form
                         onSubmit={handleSubmit}
@@ -172,7 +172,7 @@ export default function Contact() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
-                        className="space-y-5"
+                        className="space-y-5 w-full min-w-0"
                         noValidate
                     >
                         <input
@@ -336,7 +336,7 @@ export default function Contact() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.1 }}
-                        className="space-y-3"
+                        className="space-y-3 w-full min-w-0"
                     >
                         {links.map((link) => (
                             <a
@@ -347,13 +347,13 @@ export default function Contact() {
                                 className="group flex items-center justify-between p-5 rounded-xl border border-border hover:border-primary/30 transition-all duration-300 card-glow"
                             >
                                 <div className="flex items-center gap-4">
-                                    <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center group-hover:border-primary/40 group-hover:bg-primary/5 transition-all duration-300">
+                                    <div className="w-10 h-10 min-w-10 rounded-full border border-border flex items-center justify-center group-hover:border-primary/40 group-hover:bg-primary/5 transition-all duration-300">
                                         <link.icon
                                             className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors duration-300"
                                             strokeWidth={1.5}
                                         />
                                     </div>
-                                    <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300">
+                                    <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300 break-all">
                                         {link.label}
                                     </span>
                                 </div>
