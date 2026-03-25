@@ -1,7 +1,7 @@
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, Mail } from "lucide-react";
+import { ArrowLeft, MessageCircle } from "lucide-react";
 import { SERVICES } from "@/data/services";
 import { PROJECTS, Project } from "@/data/projects";
 import { CONTACT } from "@/data/contact";
@@ -265,20 +265,13 @@ export default function ServicePage() {
         p.tags.some((tag) => service.filterTags["en"].includes(tag)),
     );
 
-    const emailSubject = encodeURIComponent(
-        t(
-            `Project Inquiry: ${service.name.en}`,
-            `استفسار مشروع: ${service.name.ar}`,
-        ),
-    );
-
-    const emailBody = encodeURIComponent(
+    const whatsappMessage = encodeURIComponent(
         t(
             `Hi Mohammed,\n\nI'm interested in your ${service.name.en} service. I'd like to discuss a potential project.\n\nBest regards`,
             `مرحباً محمد،\n\nأنا مهتم بخدمة ${service.name.ar}. أود مناقشة مشروع محتمل.\n\nمع تحياتي`,
         ),
     );
-    const mailtoLink = `mailto:${CONTACT.email}?subject=${emailSubject}&body=${emailBody}`;
+    const whatsappLink = `${CONTACT.whatsapp}?text=${whatsappMessage}`;
 
     const handleTagClick = (tag: string) => {
         navigate(`/projects?tag=${encodeURIComponent(tag)}`);
@@ -372,10 +365,12 @@ export default function ServicePage() {
                     </div>
 
                     <a
-                        href={mailtoLink}
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity mb-16"
                     >
-                        <Mail className="w-4 h-4" />
+                        <MessageCircle className="w-4 h-4" />
                         {t("Start a Project", "ابدأ مشروعاً")}
                     </a>
                 </motion.div>
@@ -597,10 +592,12 @@ export default function ServicePage() {
                             </p>
                         </div>
                         <a
-                            href={mailtoLink}
+                            href={whatsappLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity shrink-0"
                         >
-                            <Mail className="w-4 h-4" />
+                            <MessageCircle className="w-4 h-4" />
                             {t("Contact Me", "تواصل معي")}
                         </a>
                     </div>
