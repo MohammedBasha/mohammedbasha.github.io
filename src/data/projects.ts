@@ -402,7 +402,7 @@ export const PROJECTS: Project[] = [
 
         image: "/images/projects/ap.webp",
 
-        link: "https://www.agentprovocateur.com/int_en/accessories",
+        link: "https://www.agentprovocateur.com/int_en/gifting/jewellery",
 
         github: "",
     },
