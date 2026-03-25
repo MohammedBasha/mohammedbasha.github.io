@@ -20,6 +20,15 @@
   <meta name="msapplication-TileImage" content="/images/favicons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="/images/favicons/favicon.ico" />
+  <script>
+    // Store the original URL in sessionStorage and redirect to home
+    // This allows the React app to navigate to the requested route
+    const currentPath = window.location.pathname + window.location.search;
+    if (currentPath !== '/') {
+      sessionStorage.setItem('redirectPath', currentPath);
+      window.location.replace('/');
+    }
+  </script>
 
   <!-- DNS prefetch for external resources -->
   <link rel="dns-prefetch" href="//fonts.googleapis.com">

@@ -1,5 +1,5 @@
-import { Suspense, lazy } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Suspense, lazy, useEffect } from "react";
+import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -12,6 +12,59 @@ const ServicePage = lazy(() => import("./pages/ServicePage.tsx"));
 const ProjectsPage = lazy(() => import("./pages/ProjectsPage.tsx"));
 const NotFound = lazy(() => import("./pages/NotFound.tsx"));
 
+// Component to handle 404 redirects from GitHub Pages
+const RedirectHandler = ({ children }: { children: React.ReactNode }) => {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const redirectPath = sessionStorage.getItem("redirectPath");
+        if (redirectPath) {
+            sessionStorage.removeItem("redirectPath");
+            navigate(redirectPath);
+        }
+    }, [navigate]);
+
+    return <>{children}</>;
+};
+
+const AppRoutes = () => (
+    <Routes>
+        <Route path="/" element={<Index />} />
+        <Route
+            path="/services"
+            element={
+                <Suspense fallback={null}>
+                    <ServicesPage />
+                </Suspense>
+            }
+        />
+        <Route
+            path="/services/:slug"
+            element={
+                <Suspense fallback={null}>
+                    <ServicePage />
+                </Suspense>
+            }
+        />
+        <Route
+            path="/projects"
+            element={
+                <Suspense fallback={null}>
+                    <ProjectsPage />
+                </Suspense>
+            }
+        />
+        <Route
+            path="*"
+            element={
+                <Suspense fallback={null}>
+                    <NotFound />
+                </Suspense>
+            }
+        />
+    </Routes>
+);
+
 const App = () => (
     <TooltipProvider>
         <ThemeProvider>
@@ -19,41 +72,9 @@ const App = () => (
                 <Toaster />
                 <Sonner />
                 <BrowserRouter>
-                    <Routes>
-                        <Route path="/" element={<Index />} />
-                        <Route
-                            path="/services"
-                            element={
-                                <Suspense fallback={null}>
-                                    <ServicesPage />
-                                </Suspense>
-                            }
-                        />
-                        <Route
-                            path="/services/:slug"
-                            element={
-                                <Suspense fallback={null}>
-                                    <ServicePage />
-                                </Suspense>
-                            }
-                        />
-                        <Route
-                            path="/projects"
-                            element={
-                                <Suspense fallback={null}>
-                                    <ProjectsPage />
-                                </Suspense>
-                            }
-                        />
-                        <Route
-                            path="*"
-                            element={
-                                <Suspense fallback={null}>
-                                    <NotFound />
-                                </Suspense>
-                            }
-                        />
-                    </Routes>
+                    <RedirectHandler>
+                        <AppRoutes />
+                    </RedirectHandler>
                 </BrowserRouter>
             </I18nProvider>
         </ThemeProvider>
