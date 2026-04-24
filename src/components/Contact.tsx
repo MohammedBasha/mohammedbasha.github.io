@@ -129,14 +129,14 @@ export default function Contact() {
                     </h2>
                     <p className="font-display mt-6">
                         {t(
-                            "I help businesses build high-performance web applications, scalable eCommerce platforms, and automation systems.",
-                            "أساعد الشركات في بناء تطبيقات ويب عالية الأداء، ومنصات تجارة إلكترونية قابلة للتطوير، وأنظمة أتمتة.",
+                            "I help businesses build high-performance web applications, scalable eCommerce platforms, and automation systems - designed to be production-ready and easy to deploy.",
+                            "أساعد الشركات في بناء تطبيقات ويب عالية الأداء، ومنصات تجارة إلكترونية قابلة للتطوير، وأنظمة أتمتة - مصممة لتكون جاهزة للإنتاج وسهلة النشر.",
                         )}
                     </p>
                     <p className="font-display">
                         {t(
-                            "If you're looking to improve performance, automate workflows, or build a modern web product - let's talk.",
-                            "إذا كنت تتطلع إلى تحسين الأداء، أو أتمتة سير العمل، أو بناء منتج ويب حديث - فلنتحدث.",
+                            "If you're looking to improve performance, automate workflows, or build a modern web product that’s reliable and ready to scale - let's talk.",
+                            "إذا كنت تتطلع إلى تحسين الأداء، أو أتمتة سير العمل، أو بناء منتج ويب حديث موثوق وجاهز للتوسع - فلنتحدث.",
                         )}
                     </p>
                     <p className="font-display mt-10">

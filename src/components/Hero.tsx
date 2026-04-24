@@ -1,4 +1,9 @@
-import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
+import {
+    motion,
+    useReducedMotion,
+    useScroll,
+    useTransform,
+} from "framer-motion";
 import { ArrowDown, Mail } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { useRef } from "react";
@@ -187,8 +192,8 @@ export default function Hero() {
                         className="text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed mb-6"
                     >
                         {t(
-                            "Frontend + Automation + System Integration Engineer",
-                            "مهندس واجهات أمامية + أتمتة + تكامل أنظمة",
+                            "Product-Focused Frontend / Full-Stack Engineer | Automation & Dockerized Systems",
+                            "مهندس تطوير واجهات أمامية / مطور تطبيقات متكاملة يركز على المنتج | أنظمة الأتمتة وأنظمة Docker",
                         )}
                     </motion.p>
 
@@ -200,8 +205,8 @@ export default function Hero() {
                         className="text-sm text-muted-foreground/60 max-w-lg leading-relaxed mb-6"
                     >
                         {t(
-                            "I build scalable web applications and automation systems that improve performance, streamline workflows, and drive business results.",
-                            "أقوم ببناء تطبيقات ويب قابلة للتطوير وأنظمة أتمتة تعمل على تحسين الأداء وتبسيط سير العمل وتحقيق نتائج أعمال ملموسة.",
+                            "I build scalable web applications and automation systems - and package them into reproducible, production-ready environments using Docker - to improve performance, streamline workflows, and drive business results.",
+                            "أقوم ببناء تطبيقات ويب قابلة للتطوير وأنظمة أتمتة - وأقوم بتجميعها في بيئات قابلة للتكرار وجاهزة للإنتاج باستخدام Docker - لتحسين الأداء وتبسيط سير العمل وتحقيق نتائج الأعمال.",
                         )}
                     </motion.p>
 

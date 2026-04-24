@@ -94,8 +94,8 @@ const SERVICE_SEO: Record<
             ar: "تطبيقات React و Next.js حديثة، سريعة، قابلة للتوسع ومحسّنة لمحركات البحث",
         },
         content: {
-            en: "I design and build modern web applications using React, Next.js, and TypeScript — optimized for performance, SEO, and scalability. Whether it's a startup MVP or a production SaaS platform, I deliver systems that are fast, maintainable, and ready to scale.",
-            ar: "أبني تطبيقات ويب حديثة باستخدام React و Next.js و MERN مع التركيز على الأداء، SEO، وقابلية التوسع. سواء MVP أو منصة SaaS كاملة، أقدّم حلول جاهزة للنمو.",
+            en: "I design and build modern web applications using React, Next.js, and TypeScript - optimized for performance, SEO, and scalability, and structured as production-ready systems that are easy to deploy and maintain. Whether it's a startup MVP or a production SaaS platform, I deliver systems that are fast, maintainable, and ready to scale. Applications can also be containerized using Docker to ensure consistent environments, simplified setup, and reliable deployment across teams.",
+            ar: "أصمم وأبني تطبيقات ويب حديثة باستخدام React وNext.js وTypeScript، مُحسّنة للأداء، ومتوافقة مع محركات البحث، وقابلة للتوسع، ومُهيكلة كأنظمة جاهزة للإنتاج، سهلة النشر والصيانة. سواءً كان مشروعاً ناشئاً أو منصة SaaS إنتاجية، أُقدم أنظمة سريعة، سهلة الصيانة، وقابلة للتوسع. يمكن أيضاً تحويل التطبيقات إلى Containers باستخدام Docker لضمان بيئات متسقة، وإعداد مبسط، ونشر موثوق عبر الفرق.",
         },
         features: {
             en: [
@@ -103,12 +103,14 @@ const SERVICE_SEO: Record<
                 "SEO-friendly Next.js apps",
                 "API integrations & dashboards",
                 "Clean architecture & reusable components",
+                "Dockerized environments for consistent development and deployment",
             ],
             ar: [
                 "تطبيقات MERN كاملة",
                 "تطبيقات Next.js محسّنة لمحركات البحث",
                 "تكامل APIs ولوحات تحكم",
                 "بنية نظيفة وقابلة لإعادة الاستخدام",
+                "بيئات مُحوسبة بتقنية Docker لتطوير ونشر متسقين",
             ],
         },
         bestFor: {
@@ -166,8 +168,8 @@ const SERVICE_SEO: Record<
             ar: "أنظمة أتمتة الأعمال لتوفير الوقت وتقليل التكاليف",
         },
         content: {
-            en: "I design automation systems that eliminate repetitive work and connect your tools into one seamless workflow. From CRM integrations to custom bots, I help businesses save time, reduce errors, and scale operations efficiently.",
-            ar: "أصمم أنظمة أتمتة تقلل العمل اليدوي وتربط أدواتك في نظام واحد متكامل. أساعد الشركات على توفير الوقت وتقليل الأخطاء وتحسين العمليات.",
+            en: "I design automation systems that eliminate repetitive work and connect your tools into one seamless, reliable workflow. From CRM integrations to custom bots, I help businesses save time, reduce errors, and scale operations efficiently. These systems are built to run consistently across environments, ensuring stability, scalability, and minimal maintenance.",
+            ar: "أصمم أنظمة أتمتة تُزيل الأعمال المتكررة وتربط أدواتك في سير عمل واحد سلس وموثوق. بدءاً من تكامل أنظمة إدارة علاقات العملاء (CRM) وصولاً إلى برامج الروبوت المخصصة، أساعد الشركات على توفير الوقت وتقليل الأخطاء وتوسيع نطاق عملياتها بكفاءة. تم تصميم هذه الأنظمة لتعمل باستمرار عبر البيئات المختلفة، مما يضمن الاستقرار وقابلية التوسع والحد الأدنى من الصيانة.",
         },
         features: {
             en: [
@@ -175,17 +177,19 @@ const SERVICE_SEO: Record<
                 "CRM & API integrations",
                 "Custom bots & internal tools",
                 "Process optimization & system design",
+                "Reliable execution across environments (production-ready systems)",
             ],
             ar: [
                 "أتمتة العمليات (Make / Zapier / n8n)",
                 "تكامل CRM و APIs",
                 "تطوير Bots وأدوات داخلية",
                 "تحسين العمليات",
+                "تنفيذ موثوق به عبر البيئات المختلفة (أنظمة جاهزة للإنتاج)",
             ],
         },
         bestFor: {
             en: [
-                "Businesses are wasting time on manual processes",
+                "Businesses that are wasting time on manual processes",
                 "Teams using multiple tools without integration",
                 "Companies looking to scale operations efficiently",
             ],

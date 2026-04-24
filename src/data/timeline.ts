@@ -49,7 +49,7 @@ export const TIMELINE: TimelineEntry[] = [
         ],
     },
     {
-        year: { en: "2026", ar: "2026" },
+        year: { en: "03-2026", ar: "03-2026" },
         title: {
             en: "Automation & System Integration Engineering",
             ar: "هندسة الأتمتة وتكامل الأنظمة",
@@ -65,20 +65,38 @@ export const TIMELINE: TimelineEntry[] = [
             "CRM",
             "Automation",
             "Monday.com",
-            "trello",
-            "telegram",
+            "Trello",
+            "Telegram",
+        ],
+    },
+    {
+        year: { en: "04-2026", ar: "04-2026" },
+        title: {
+            en: "Containerization & Deployment (Docker)",
+            ar: "التغليف والنشر باستخدام Containers (Docker)",
+        },
+        description: {
+            en: "Focused on making full-stack applications production-ready by containerizing services, managing environments, and enabling reproducible setups using Docker and Docker Compose.",
+            ar: "يركز على جعل التطبيقات الكاملة جاهزة للإنتاج من خلال تحويل الخدمات إلى Containers، وإدارة البيئات، وتمكين عمليات الإعداد القابلة للتكرار باستخدام Docker و Docker Compose.",
+        },
+        tags: [
+            "DevOps & Deployment",
+            "Docker",
+            "Docker Compose",
+            "Environment Configuration",
+            "Multi-service Architecture",
         ],
     },
     {
         year: { en: "Today", ar: "اليوم" },
         title: {
-            en: "Frontend + Automation + System Integration Engineer",
-            ar: "مهندس واجهة أمامية + أتمتة + تكامل أنظمة",
+            en: "Frontend / Full-Stack + Automation + System Integration Engineer",
+            ar: "مهندس تطوير واجهات أمامية / مطور تطبيقات متكاملة + أتمتة + تكامل أنظمة",
         },
         description: {
-            en: "I build scalable web applications and automation systems that improve performance, streamline workflows, and drive business results.",
-            ar: "أقوم ببناء تطبيقات ويب قابلة للتوسع وأنظمة أتمتة تحسن الأداء وتبسط سير العمل وتؤدي إلى نتائج أعمال.",
+            en: "I build scalable, production-ready web applications and automation systems - designed to perform reliably, integrate seamlessly, and be easily deployed across environments.",
+            ar: "أقوم ببناء تطبيقات ويب وأنظمة أتمتة قابلة للتطوير وجاهزة للإنتاج - مصممة للعمل بشكل موثوق، والتكامل بسلاسة، وسهولة النشر عبر البيئات المختلفة.",
         },
-        tags: ["Automation & Integrations"],
+        tags: [],
     },
 ];

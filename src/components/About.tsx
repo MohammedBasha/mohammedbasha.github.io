@@ -79,8 +79,8 @@ export default function About() {
                     </span>
                     <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-[-0.03em] leading-[1.05] max-w-2xl">
                         {t(
-                            "Building scalable products, ",
-                            "بناء منتجات قابلة للتطوير، ",
+                            "Building scalable and production-ready products, ",
+                            "بناء منتجات قابلة للتطوير وجاهزة للإنتاج، ",
                         )}{" "}
                         <span className="text-primary">
                             {t(
@@ -131,8 +131,8 @@ export default function About() {
                         <div className="space-y-5 text-muted-foreground leading-[1.8] text-[15px] mb-10">
                             <p>
                                 {t(
-                                    "Frontend + Automation + System Integration Engineer with 6+ years of experience delivering high-performance web applications and digital commerce solutions.",
-                                    "مهندس واجهات أمامية + أتمتة + تكامل أنظمة بخبرة تزيد عن 6 سنوات في تقديم تطبيقات ويب عالية الأداء وحلول التجارة الرقمية.",
+                                    "Frontend / Full-Stack + Automation + System Integration Engineer with 6+ years of experience delivering high-performance web applications and digital commerce solutions.",
+                                    "مهندس تطوير واجهات أمامية / مطور تطبيقات متكاملة + أتمتة + تكامل أنظمة بخبرة تزيد عن 6 سنوات في تقديم تطبيقات ويب عالية الأداء وحلول التجارة الرقمية.",
                                 )}
                             </p>
                             <p>
@@ -143,14 +143,20 @@ export default function About() {
                             </p>
                             <p>
                                 {t(
-                                    "From Magento 2 storefronts for global brands like Zegna, ASICS, and Tiffany, to modern SaaS platforms built with Next.js and MERN - I combine frontend engineering with system integrations to create efficient, scalable digital products.",
-                                    "من واجهات متاجر Magento 2 للعلامات التجارية العالمية مثل Zegna و ASICS و Tiffany، إلى منصات SaaS الحديثة المبنية باستخدام Next.js و MERN - أقوم بدمج هندسة الواجهة الأمامية مع تكامل الأنظمة لإنشاء منتجات رقمية فعالة وقابلة للتطوير.",
+                                    "I also focus on making applications production-ready by containerizing them with Docker, enabling consistent environments, simplified setup, and scalable deployment.",
+                                    "أركز أيضاً على جعل التطبيقات جاهزة للإنتاج من خلال وضعها في Containers باستخدام Docker، مما يتيح بيئات متسقة، وإعداداً مبسطاً، ونشراً قابلاً للتوسع.",
                                 )}
                             </p>
                             <p>
                                 {t(
-                                    "I focus on solving business problems through technology - not just building features.",
-                                    "أركز على حل مشاكل الأعمال من خلال التكنولوجيا - وليس مجرد بناء الميزات.",
+                                    "From Magento 2 storefronts for global brands like Zegna, ASICS, and Tiffany, to modern SaaS platforms built with Next.js and MERN, I design and deliver full-stack systems that are scalable, maintainable, and ready for real-world deployment.",
+                                    "من واجهات متاجر Magento 2 للعلامات التجارية العالمية مثل Zegna و ASICS و Tiffany، إلى منصات SaaS الحديثة المبنية باستخدام Next.js و MERN، أقوم بتصميم وتقديم أنظمة كاملة قابلة للتطوير والصيانة وجاهزة للنشر في العالم الحقيقي.",
+                                )}
+                            </p>
+                            <p>
+                                {t(
+                                    "I focus on solving business problems through technology - building systems that are scalable, maintainable, and ready to ship.",
+                                    "أركز على حل مشاكل الأعمال من خلال التكنولوجيا - بناء أنظمة قابلة للتطوير والصيانة وجاهزة للنشر.",
                                 )}
                             </p>
                         </div>

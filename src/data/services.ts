@@ -65,8 +65,8 @@ export const SERVICES: Service[] = [
             ar: "تطوير الواجهات الحديثة والتطوير الشامل",
         },
         description: {
-            en: "High-performance web applications built with React, Next.js, and the MERN stack.",
-            ar: "تطبيقات ويب عالية الأداء مبنية باستخدام React و Next.js و MERN stack.",
+            en: "High-performance web applications built with React, Next.js, and the MERN stack - designed as scalable, production-ready systems, containerized with Docker for consistent environments and simplified deployment.",
+            ar: "تطبيقات ويب عالية الأداء مبنية باستخدام React و Next.js و MERN stack - مصممة كأنظمة قابلة للتوسع وجاهزة للإنتاج، ووضعها في Containers باستخدام Docker لبيئات متسقة ونشر مبسط.",
         },
         longDescription: {
             en: "I focus on scalable architecture, clean UI, and efficient data handling to deliver fast, reliable, and maintainable digital products.",
@@ -90,8 +90,8 @@ export const SERVICES: Service[] = [
             ar: "أتمتة سير العمل والتكاملات",
         },
         description: {
-            en: "Workflow automation and system integrations that connect your tools and streamline operations.",
-            ar: "أتمتة سير العمل وتكامل الأنظمة التي تربط أدواتك وتبسط العمليات.",
+            en: "Workflow automation and system integrations that connect your tools and streamline operations, and run reliably across environments.",
+            ar: "أتمتة سير العمل وتكامل الأنظمة التي تربط أدواتك وتبسط العمليات، وتعمل بشكل موثوق عبر البيئات المختلفة.",
         },
         longDescription: {
             en: "I design automation pipelines using Make.com and APIs to reduce manual work, improve efficiency, and enable scalable business processes.",
