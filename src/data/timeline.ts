@@ -72,12 +72,12 @@ export const TIMELINE: TimelineEntry[] = [
     {
         year: { en: "04-2026", ar: "04-2026" },
         title: {
-            en: "Containerization & Deployment (Docker)",
-            ar: "التغليف والنشر باستخدام Containers (Docker)",
+            en: "Containerization & Cloud Deployment",
+            ar: "Containerization & Cloud Deployment",
         },
         description: {
-            en: "Focused on making full-stack applications production-ready by containerizing services, managing environments, and enabling reproducible setups using Docker and Docker Compose.",
-            ar: "يركز على جعل التطبيقات الكاملة جاهزة للإنتاج من خلال تحويل الخدمات إلى Containers، وإدارة البيئات، وتمكين عمليات الإعداد القابلة للتكرار باستخدام Docker و Docker Compose.",
+            en: "Focused on production readiness by containerizing full-stack applications with Docker and Docker Compose, and deploying them using Google Cloud Platform (Cloud Run) for scalable, reproducible environments. Deployment: Docker · Docker Compose · Cloud Run · Artifact Registry · Environment Configuration · Multi-service Architecture",
+            ar: "التركيز على جاهزية الإنتاج من خلال containerizing التطبيقات المتكاملة باستخدام Docker وDocker Compose، ونشرها باستخدام منصة Google Cloud (Cloud Run) لبيئات قابلة للتوسع والتكرار. Deployment: Docker · Docker Compose · Cloud Run · Artifact Registry · Environment Configuration · Multi-service Architecture",
         },
         tags: [
             "DevOps & Deployment",
@@ -85,6 +85,10 @@ export const TIMELINE: TimelineEntry[] = [
             "Docker Compose",
             "Environment Configuration",
             "Multi-service Architecture",
+            "Google Cloud Platform",
+            "GCP",
+            "Cloud Run",
+            "Artifact Registry",
         ],
     },
     {
@@ -94,8 +98,8 @@ export const TIMELINE: TimelineEntry[] = [
             ar: "مهندس تطوير واجهات أمامية / مطور تطبيقات متكاملة + أتمتة + تكامل أنظمة",
         },
         description: {
-            en: "I build scalable, production-ready web applications and automation systems - designed to perform reliably, integrate seamlessly, and be easily deployed across environments.",
-            ar: "أقوم ببناء تطبيقات ويب وأنظمة أتمتة قابلة للتطوير وجاهزة للإنتاج - مصممة للعمل بشكل موثوق، والتكامل بسلاسة، وسهولة النشر عبر البيئات المختلفة.",
+            en: "I build scalable, production-ready web applications and automation systems designed to perform reliably, integrate seamlessly, and deploy consistently across cloud environments.",
+            ar: "أقوم ببناء تطبيقات ويب وأنظمة أتمتة قابلة للتطوير وجاهزة للإنتاج، مصممة للعمل بشكل موثوق، والتكامل بسلاسة، والنشر بشكل متسق عبر بيئات الحوسبة السحابية.",
         },
         tags: [],
     },

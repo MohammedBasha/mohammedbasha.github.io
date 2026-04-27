@@ -65,8 +65,8 @@ export const SERVICES: Service[] = [
             ar: "تطوير الواجهات الحديثة والتطوير الشامل",
         },
         description: {
-            en: "High-performance web applications built with React, Next.js, and the MERN stack - designed as scalable, production-ready systems, containerized with Docker for consistent environments and simplified deployment.",
-            ar: "تطبيقات ويب عالية الأداء مبنية باستخدام React و Next.js و MERN stack - مصممة كأنظمة قابلة للتوسع وجاهزة للإنتاج، ووضعها في Containers باستخدام Docker لبيئات متسقة ونشر مبسط.",
+            en: "High-performance web applications built with React, Next.js, and the MERN stack - designed as scalable, production-ready systems. Applications are containerized using Docker and deployed using Google Cloud Platform (Cloud Run) for consistent environments and reliable deployment workflows.",
+            ar: "تطبيقات ويب عالية الأداء مبنية باستخدام React وNext.js وMERN stack، مصممة كأنظمة قابلة للتوسع وجاهزة للإنتاج. يتم تغليف التطبيقات باستخدام Docker ونشرها باستخدام منصة Google Cloud Platform (Cloud Run) لضمان بيئات متسقة وسير عمل نشر موثوق.",
         },
         longDescription: {
             en: "I focus on scalable architecture, clean UI, and efficient data handling to deliver fast, reliable, and maintainable digital products.",

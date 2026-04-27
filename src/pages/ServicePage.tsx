@@ -94,8 +94,8 @@ const SERVICE_SEO: Record<
             ar: "تطبيقات React و Next.js حديثة، سريعة، قابلة للتوسع ومحسّنة لمحركات البحث",
         },
         content: {
-            en: "I design and build modern web applications using React, Next.js, and TypeScript - optimized for performance, SEO, and scalability, and structured as production-ready systems that are easy to deploy and maintain. Whether it's a startup MVP or a production SaaS platform, I deliver systems that are fast, maintainable, and ready to scale. Applications can also be containerized using Docker to ensure consistent environments, simplified setup, and reliable deployment across teams.",
-            ar: "أصمم وأبني تطبيقات ويب حديثة باستخدام React وNext.js وTypeScript، مُحسّنة للأداء، ومتوافقة مع محركات البحث، وقابلة للتوسع، ومُهيكلة كأنظمة جاهزة للإنتاج، سهلة النشر والصيانة. سواءً كان مشروعاً ناشئاً أو منصة SaaS إنتاجية، أُقدم أنظمة سريعة، سهلة الصيانة، وقابلة للتوسع. يمكن أيضاً تحويل التطبيقات إلى Containers باستخدام Docker لضمان بيئات متسقة، وإعداد مبسط، ونشر موثوق عبر الفرق.",
+            en: "I design and build modern web applications using React, Next.js, and TypeScript - optimized for performance, SEO, and scalability, and structured as production-ready systems that are easy to deploy and maintain. Whether it's a startup MVP or a production SaaS platform, I deliver systems that are fast, maintainable, and built to scale. Applications are containerized using Docker and deployed to Google Cloud Platform (Cloud Run) to ensure consistent environments, simplified setup, and reliable production workflows.",
+            ar: "أصمم وأبني تطبيقات ويب حديثة باستخدام React وNext.js وTypeScript، مُحسّنة للأداء، ومتوافقة مع محركات البحث، وقابلة للتوسع، ومُهيكلة كأنظمة جاهزة للإنتاج، سهلة النشر والصيانة. سواءً كان مشروعاً ناشئاً أو منصة SaaS إنتاجية، أُقدم أنظمة سريعة، سهلة الصيانة، وقابلة للتوسع. يتم تغليف التطبيقات باستخدام Docker ونشرها على منصة Google Cloud (Cloud Run) لضمان بيئات متسقة، وإعداد مُبسط، وسير عمل إنتاجي موثوق.",
         },
         features: {
             en: [
@@ -103,26 +103,26 @@ const SERVICE_SEO: Record<
                 "SEO-friendly Next.js apps",
                 "API integrations & dashboards",
                 "Clean architecture & reusable components",
-                "Dockerized environments for consistent development and deployment",
+                "Dockerized environments with cloud deployment (Cloud Run)",
             ],
             ar: [
                 "تطبيقات MERN كاملة",
                 "تطبيقات Next.js محسّنة لمحركات البحث",
                 "تكامل APIs ولوحات تحكم",
                 "بنية نظيفة وقابلة لإعادة الاستخدام",
-                "بيئات مُحوسبة بتقنية Docker لتطوير ونشر متسقين",
+                "بيئات مُحوسبة باستخدام Docker مع نشر سحابي (Cloud Run)",
             ],
         },
         bestFor: {
             en: [
                 "Startups building MVPs or SaaS platforms",
                 "Businesses needing scalable web applications",
-                "Companies looking to improve performance & SEO",
+                "Companies improving performance, SEO, and deployment workflows",
             ],
             ar: [
                 "الشركات الناشئة التي تبني MVP أو SaaS",
                 "الشركات التي تحتاج تطبيقات قابلة للتوسع",
-                "الشركات التي تريد تحسين الأداء و SEO",
+                "الشركات التي تعمل على تحسين الأداء، وتحسين محركات البحث، وسير العمل الخاص بالنشر",
             ],
         },
     },

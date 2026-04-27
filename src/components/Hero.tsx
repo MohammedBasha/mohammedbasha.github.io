@@ -192,8 +192,8 @@ export default function Hero() {
                         className="text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed mb-6"
                     >
                         {t(
-                            "Product-Focused Frontend / Full-Stack Engineer | Automation & Dockerized Systems",
-                            "مهندس تطوير واجهات أمامية / مطور تطبيقات متكاملة يركز على المنتج | أنظمة الأتمتة وأنظمة Docker",
+                            "Product-Focused Frontend / Full-Stack Engineer | Automation, Docker & Cloud Deployment (GCP)",
+                            "مهندس واجهة أمامية / مطور تطبيقات متكاملة أركز على المنتج | أتمتة، Docker، وCloud Deployment (GCP)",
                         )}
                     </motion.p>
 
@@ -205,8 +205,8 @@ export default function Hero() {
                         className="text-sm text-muted-foreground/60 max-w-lg leading-relaxed mb-6"
                     >
                         {t(
-                            "I build scalable web applications and automation systems - and package them into reproducible, production-ready environments using Docker - to improve performance, streamline workflows, and drive business results.",
-                            "أقوم ببناء تطبيقات ويب قابلة للتطوير وأنظمة أتمتة - وأقوم بتجميعها في بيئات قابلة للتكرار وجاهزة للإنتاج باستخدام Docker - لتحسين الأداء وتبسيط سير العمل وتحقيق نتائج الأعمال.",
+                            "I build scalable web applications and automation systems - and take them from development to production by containerizing with Docker and deploying on Google Cloud Platform (Cloud Run). My focus is on performance, clean architecture, and delivering real business value.",
+                            "أقوم ببناء تطبيقات ويب قابلة للتوسع وأنظمة أتمتة، وأتولى تطويرها ونقلها من مرحلة التطوير إلى مرحلة الإنتاج باستخدام تقنية Docker Containerizing ونشرها على منصة Google Cloud Platform (Cloud Run). أركز على الأداء، والبنية النظيفة، وتقديم قيمة حقيقية للأعمال.",
                         )}
                     </motion.p>
 

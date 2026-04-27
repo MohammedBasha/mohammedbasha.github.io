@@ -132,7 +132,7 @@ export default function About() {
                             <p>
                                 {t(
                                     "Frontend / Full-Stack + Automation + System Integration Engineer with 6+ years of experience delivering high-performance web applications and digital commerce solutions.",
-                                    "مهندس تطوير واجهات أمامية / مطور تطبيقات متكاملة + أتمتة + تكامل أنظمة بخبرة تزيد عن 6 سنوات في تقديم تطبيقات ويب عالية الأداء وحلول التجارة الرقمية.",
+                                    "مهندس واجهات أمامية / مطور تطبيقات متكاملة + أتمتة + تكامل أنظمة أتمتع بخبرة تزيد عن 6 سنوات في تقديم تطبيقات ويب عالية الأداء وحلول التجارة الرقمية.",
                                 )}
                             </p>
                             <p>
@@ -143,20 +143,20 @@ export default function About() {
                             </p>
                             <p>
                                 {t(
-                                    "I also focus on making applications production-ready by containerizing them with Docker, enabling consistent environments, simplified setup, and scalable deployment.",
-                                    "أركز أيضاً على جعل التطبيقات جاهزة للإنتاج من خلال وضعها في Containers باستخدام Docker، مما يتيح بيئات متسقة، وإعداداً مبسطاً، ونشراً قابلاً للتوسع.",
+                                    "I also focus on taking applications to production by containerizing them with Docker and deploying them using Google Cloud Platform (Cloud Run), ensuring consistent environments, simplified setup, and scalable infrastructure.",
+                                    "أركز أيضاً على نقل التطبيقات إلى مرحلة الإنتاج من خلال تحويلها إلى Containers باستخدام Docker ونشرها باستخدام منصة Google Cloud (Cloud Run)، مما يضمن بيئات متسقة وإعداداً مبسطاً وبنية تحتية قابلة للتوسع.",
                                 )}
                             </p>
                             <p>
                                 {t(
-                                    "From Magento 2 storefronts for global brands like Zegna, ASICS, and Tiffany, to modern SaaS platforms built with Next.js and MERN, I design and deliver full-stack systems that are scalable, maintainable, and ready for real-world deployment.",
-                                    "من واجهات متاجر Magento 2 للعلامات التجارية العالمية مثل Zegna و ASICS و Tiffany، إلى منصات SaaS الحديثة المبنية باستخدام Next.js و MERN، أقوم بتصميم وتقديم أنظمة كاملة قابلة للتطوير والصيانة وجاهزة للنشر في العالم الحقيقي.",
+                                    "From Magento 2 storefronts for global brands like Zegna, ASICS, and Tiffany, to modern SaaS platforms built with Next.js and MERN, I design and deliver full-stack systems that are scalable, maintainable, and production-ready.",
+                                    "من واجهات متاجر Magento 2 للعلامات التجارية العالمية مثل Zegna و ASICS و Tiffany، إلى منصات SaaS الحديثة المبنية باستخدام Next.js و MERN، أقوم بتصميم وتقديم أنظمة كاملة قابلة للتطوير والصيانة وجاهزة للإنتاج.",
                                 )}
                             </p>
                             <p>
                                 {t(
-                                    "I focus on solving business problems through technology - building systems that are scalable, maintainable, and ready to ship.",
-                                    "أركز على حل مشاكل الأعمال من خلال التكنولوجيا - بناء أنظمة قابلة للتطوير والصيانة وجاهزة للنشر.",
+                                    "I focus on solving business problems through technology - building systems that are not only well-architected, but also deployable, scalable, and ready for real-world use.",
+                                    "أركز على حل مشاكل الأعمال من خلال التكنولوجيا - بناء أنظمة ليست فقط مصممة بشكل جيد، ولكنها أيضاً قابلة للنشر والتوسع وجاهزة للاستخدام في العالم الحقيقي.",
                                 )}
                             </p>
                         </div>

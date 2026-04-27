@@ -129,14 +129,20 @@ export default function Contact() {
                     </h2>
                     <p className="font-display mt-6">
                         {t(
-                            "I help businesses build high-performance web applications, scalable eCommerce platforms, and automation systems - designed to be production-ready and easy to deploy.",
-                            "أساعد الشركات في بناء تطبيقات ويب عالية الأداء، ومنصات تجارة إلكترونية قابلة للتطوير، وأنظمة أتمتة - مصممة لتكون جاهزة للإنتاج وسهلة النشر.",
+                            "I help businesses design, build, and deploy high-performance web applications, scalable eCommerce platforms, and automation systems that are production-ready and easy to maintain.",
+                            "أساعد الشركات في تصميم وبناء ونشر تطبيقات ويب عالية الأداء، ومنصات تجارة إلكترونية قابلة للتطوير، وأنظمة أتمتة جاهزة للإنتاج وسهلة الصيانة.",
                         )}
                     </p>
                     <p className="font-display">
                         {t(
-                            "If you're looking to improve performance, automate workflows, or build a modern web product that’s reliable and ready to scale - let's talk.",
-                            "إذا كنت تتطلع إلى تحسين الأداء، أو أتمتة سير العمل، أو بناء منتج ويب حديث موثوق وجاهز للتوسع - فلنتحدث.",
+                            "I focus on creating solutions that improve performance, automate workflows, and scale reliably using modern technologies like React, Next.js, Node.js, Docker, and cloud deployment on Google Cloud Platform (Cloud Run).",
+                            "أركز على ابتكار حلول تعمل على تحسين الأداء، وأتمتة سير العمل، والتوسع بشكل موثوق باستخدام التقنيات الحديثة مثل React و Next.js و Node.js و Docker والنشر السحابي على منصة Google Cloud Platform (Cloud Run).",
+                        )}
+                    </p>
+                    <p className="font-display">
+                        {t(
+                            "If you're looking to build or improve a modern web product that is fast, scalable, and production-ready - let’s connect.",
+                            "إذا كنت تتطلع إلى بناء أو تحسين منتج ويب حديث يتميز بالسرعة وقابلية التوسع وجاهزية الإنتاج - فلنتواصل.",
                         )}
                     </p>
                     <p className="font-display mt-10">

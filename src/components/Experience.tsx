@@ -75,7 +75,7 @@ export default function Experience() {
                                     {t(entry.title.en, entry.title.ar)}
                                 </h3>
                                 <p
-                                    className={`text-sm text-muted-foreground leading-relaxed mb-4 md:h-[3.2rem] ${lang === "ar" ? "h-[6rem]" : "h-[8rem]"}`}
+                                    className={`text-sm text-muted-foreground leading-relaxed mb-4 md:h-[6rem] ${lang === "ar" ? "h-[6rem]" : "h-[8rem]"}`}
                                 >
                                     {t(
                                         entry.description.en,
